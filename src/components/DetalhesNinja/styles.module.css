@@ -1,0 +1,7 @@
+.detailsBox { background-color: #1f1f1f; border: 3px solid #ff6600; border-radius: 12px; padding: 20px; margin-bottom: 30px; color: #fff; }
+.detailsContent { display: flex; gap: 20px; align-items: center; }
+.detailsContent img { width: 150px; height: 200px; object-fit: cover; border-radius: 8px; }
+.info h2 { color: #ff6600; margin-bottom: 10px; }
+.info p { margin: 8px 0; }
+.closeBtn { background-color: #ff6600; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; margin-top: 10px; font-weight: bold; }
+.closeBtn:hover { background-color: #e05500; }
