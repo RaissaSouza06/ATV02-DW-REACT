@@ -5,10 +5,9 @@ import CardNinja from "../components/CardNinja";
 import DetalhesNinja from "../components/DetalhesNinja";
 
 export default function Home() {
-  // Estados:
   // personagens: armazena a lista vinda da API
-  // selecionado: armazena os dados do shinobi clicado
   const [personagens, setPersonagens] = useState([]);
+  // selecionado: armazena os dados do shinobi clicado
   const [selecionado, setSelecionado] = useState(null);
 
   // Hook useEffect para carregar dados da API externa ao abrir a tela
@@ -18,7 +17,7 @@ export default function Home() {
       .then((data) => {
         setPersonagens(data.data.slice(0, 24)); // salvando os 24 primeiros registros
       })
-      .catch((err) => console.error("Erro na API:", err));
+      .catch((error) => console.error("Erro na API:", error));
   }, []);
 
   return (
